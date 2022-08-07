@@ -1,0 +1,11 @@
+/* QUATTROCENTO */
+@font-face {
+  font-family: "Quattrocento";
+  src: url("../assets/fonts/quattrocento/Quattrocento-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Quattrocento";
+  src: url("../assets/fonts/quattrocento/Quattrocento-Bold.ttf");
+  font-weight: bold;
+}

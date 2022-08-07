@@ -1,0 +1,23 @@
+:root {
+  /* Colors */
+  --clr-white: #fff;
+  --clr-light-gray: #f3f3f3;
+  --clr-dark-gray: #333;
+  --clr-black: #222;
+  --clr-blue: #26659A;
+  --clr-dark-blue: #1C4A71;
+
+  /* Fonts */
+  --ff-main: 'Quattrocento', sans-serif;
+
+  /* Font Sizes */
+  --fs-1: 1rem;
+  --fs-2: 2rem;
+
+  /* Spacing */
+  --header-height: 4rem;
+  --space-1: 1rem;
+  --space-2: 1.5rem;
+  --space-3: 2.5rem;
+
+}
