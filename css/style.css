@@ -4,6 +4,7 @@ body {
 }
 
 h2 {
+  font-size: var(--fs-2);
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -62,6 +63,11 @@ h2 {
   color: var(--clr-white);
 }
 
+.nav__link:hover,
+.nav__link:focus {
+  text-decoration: underline;
+}
+
 .banner {
   width: 100%;
   height: 30rem;
@@ -109,13 +115,40 @@ h2 {
   color: var(--clr-blue)
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .slot-3 {
+  min-width: 15rem;
   text-align: center;
 }
 
 /* Utilities */
 .bg-gray {
   background-color: var(--clr-light-gray);
+}
+
+.pb-2 {
+  padding-bottom: var(--space-2);
+}
+
+.pt-2 {
+  padding-top: var(--space-2);
+}
+
+.pb-3 {
+  padding-bottom: var(--space-3);
+}
+
+.pt-3 {
+  padding-top: var(--space-3);
+}
+
+.text-centered {
+  text-align: center;
 }
 
 .accent-title {
@@ -176,10 +209,9 @@ h2 {
   padding: 1em 2em;
   border-style: double;
   color: var(--clr-white);
+  background-color: transparent;
   font-weight: 700;
   text-transform: uppercase;
-
-  background-color: transparent;
   transition: background-color 200ms linear;
 }
 
@@ -188,12 +220,16 @@ h2 {
   background-color: var(--clr-dark-blue);
 }
 
+.desktop-only {
+  display: none;
+}
+
 /* Modifiers */
 .flex-column--centered {
   justify-content: center;
   align-items: center;
 }
-.nav-header {
+.nav-desktop {
   display: none;
 }
 .menu-desktop {
@@ -226,10 +262,15 @@ h2 {
   .banner {
     height: calc(100vh - var(--header-height));
   }
-
   .double {
     flex-direction: row;
     gap: 2.5rem;
+  }
+  .footer__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid var(--clr-blue);
   }
   
   /* Modifiers */
@@ -239,23 +280,30 @@ h2 {
   .nav-menu {
     display: none;
   }
-  .nav-header {
+  .nav-desktop {
     display: block;
   }
-  .nav__item-header:hover,
-  .nav__item-header:focus {
-    background-color: var(--clr-dark-blue);
-  }
-
   .frame--main {
     padding-left: 3.5rem;
     padding-right: 35rem;
     text-align: left;
   }
+  .info {
+    flex-direction: row;
+  }
+  .nav__link--footer {
+    color: var(--clr-blue);
+  }
 
   /* Utilities */
   .container {
     max-width: 960px;
+  }
+  .change {
+    order: 2;
+  }
+  .desktop-only {
+    display: block;
   }
 }
 
